@@ -1,0 +1,32 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@float-capital/solidity-coverage": "^0.7.17",
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.2",
+    "hardhat": "^2.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy_LpDepositor": "HARDHAT_NETWORK=ftmtestnet npx hardhat run scripts/deploy_LpDepositor.js",
+    "deploy_StakingRewards":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_StakingRewards.js",
+    "deploy_LpDepositToken":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_LpDepositToken.js",
+    "deploy_VeDepositor":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_VeDepositor.js",
+    "deploy_Whitelister":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_Whitelister.js",
+    "deploy_SolidexVoter":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_SolidexVoter.js",
+    "deploy_FeeDistributor":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_FeeDistributor.js",
+    "deploy_TokenLocker":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_TokenLocker.js",
+    "deploy_Token":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_Token.js",
+    "deploy_sexPartner":"HARDHAT_NETWORK=matic npx hardhat run scripts/deploy_sexPartner.js",
+    "deploy_Allcontracts":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_Allcontracts.js",
+    "deploy_firstscript":"HARDHAT_NETWORK=mumbai npx hardhat run scripts/deploy_firstscript.js"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^2.1.5",
+    "chalk": "^4.1.1",
+    "dotenv": "^8.2.0"
+  }
+}
